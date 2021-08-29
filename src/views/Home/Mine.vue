@@ -1,15 +1,18 @@
 <template>
   <div>
-    <router-view></router-view>
-    <Footer />
+    <Header :mine="true" />
   </div>
 </template>
 
 <script>
-import Footer from "../components/Home/Footer.vue";
+import Header from "../../components/Home/Header.vue";
 export default {
+  data() {
+    return {};
+  },
+
   components: {
-    Footer,
+    Header,
   },
 };
 </script>
